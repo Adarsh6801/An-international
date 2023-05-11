@@ -5,5 +5,7 @@ import * as authController from "../../controller/authController/auth.controller
 
 
 router.post('/register',authController.register)
+router.post('/email-verify',authController.emailOtp);
+router.post('/login',authController.login)
 
 export default router;
