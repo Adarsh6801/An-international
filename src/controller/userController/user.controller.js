@@ -89,7 +89,7 @@ export const getExcelByUserId = async (req, res) => {
   worksheet.addRow({
     name: user.firstName+" "+ user.lastName,
     email: user.email,
-    dob: user.age,
+    dob: user.dateOfBirth,
     hobbies: user.hobbies.join(", "),
     projects: user.projects.join(", "),
   });
