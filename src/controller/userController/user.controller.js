@@ -105,6 +105,8 @@ export const getExcelByUserId = async (req, res) => {
     // Stream the file to the client
     const stream = fs.createReadStream(filePath);
     stream.pipe(res);
+    res.status(200).send({ msg: "Excel is downloaded" });
+
 
   } catch (error) {
     console.log(error);
